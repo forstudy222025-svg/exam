@@ -1,0 +1,21 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f3f4f6; color: #111827; }
+nav { background: #1f2937; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: #f9fafb; margin-right: 18px; text-decoration: none; font-weight: 500; }
+nav .nav-right span { color: #d1d5db; margin-right: 12px; }
+.page-container { max-width: 900px; margin: 24px auto; padding: 0 18px; }
+.auth-form, form { background: #ffffff; border: 1px solid #d1d5db; border-radius: 10px; padding: 20px; box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08); }
+button, .button { background: #2563eb; color: #ffffff; border: none; border-radius: 8px; padding: 10px 16px; cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover, .button:hover { background: #1d4ed8; }
+.item-list { list-style: none; padding: 0; }
+.item-list li { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; margin-bottom: 14px; padding: 18px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.item-list li div.actions a { margin-left: 10px; color: #1d4ed8; }
+.page-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 22px; }
+.page-subtitle { margin: 6px 0 0; color: #6b7280; }
+.form-field { margin-bottom: 18px; }
+.form-field label, .form-field legend { display: block; margin-bottom: 6px; font-weight: 600; }
+.form-field input, .form-field textarea, .form-field select { width: 100%; border: 1px solid #d1d5db; border-radius: 8px; padding: 10px 12px; background: #f9fafb; }
+.form-actions { display: flex; gap: 12px; align-items: center; margin-top: 16px; }
+.button-secondary { background: #6b7280; }
+.button-secondary:hover { background: #4b5563; }
+.item-info { display: grid; gap: 8px; }
+.item-meta { display: flex; gap: 14px; color: #4b5563; margin-top: 6px; font-size: 0.95rem; }

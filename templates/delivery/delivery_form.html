@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{% if object %}Edit Delivery Order{% else %}Add Delivery Order{% endif %}</h1>
+<form method="post">{% csrf_token %}
+  <div class="form-field">
+    {{ form.customer_name.label_tag }}
+    {{ form.customer_name }}
+    {{ form.customer_name.errors }}
+  </div>
+  <div class="form-field">
+    {{ form.phone.label_tag }}
+    {{ form.phone }}
+    {{ form.phone.errors }}
+  </div>
+  <div class="form-field">
+    {{ form.address.label_tag }}
+    {{ form.address }}
+    {{ form.address.errors }}
+  </div>
+  <div class="form-field">
+    {{ form.status.label_tag }}
+    {{ form.status }}
+    {{ form.status.errors }}
+  </div>
+  <div class="form-actions">
+    <button type="submit">Save Delivery</button>
+    <a class="button button-secondary" href="{% url 'delivery:delivery_list' %}">Cancel</a>
+  </div>
+</form>
+{% endblock %}

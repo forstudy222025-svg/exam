@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{% if object %}Edit Product{% else %}Add Product{% endif %}</h1>
+<form method="post">{% csrf_token %}
+  <div class="form-field">
+    {{ form.name.label_tag }}
+    {{ form.name }}
+    {{ form.name.errors }}
+  </div>
+  <div class="form-field">
+    {{ form.description.label_tag }}
+    {{ form.description }}
+    {{ form.description.errors }}
+  </div>
+  <div class="form-field">
+    {{ form.price.label_tag }}
+    {{ form.price }}
+    {{ form.price.errors }}
+  </div>
+  <div class="form-field">
+    {{ form.stock.label_tag }}
+    {{ form.stock }}
+    {{ form.stock.errors }}
+  </div>
+  <div class="form-actions">
+    <button type="submit">Save Product</button>
+    <a class="button button-secondary" href="{% url 'shop:product_list' %}">Cancel</a>
+  </div>
+</form>
+{% endblock %}
